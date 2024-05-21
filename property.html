@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* img{
+            position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+        }
+        p,h1{
+            margin:100px;
+        }
+     */
+
+    .container {
+  position: relative;
+}
+
+.black-box {
+  position: relative;
+  border: 2px solid black;
+  height: 100px;
+  margin: 30px;
+}
+
+.gray-box {
+  position: absolute;
+  background: lightgray;
+  height: 60px;  
+  width: 70%;
+  left: 50px;
+  top: 50px;
+}
+
+.green-box {
+  position: absolute;
+  background: lightgreen;
+  width: 20%;
+  left: 270px;
+  top: -15px;
+  height: 100px;
+  color:red;
+}
+
+div{ 
+
+  overflow: scroll;
+}
+img {
+  float: right;
+}
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+p::first-line {
+  color: #0000ff;
+  font-variant: small-caps;
+}
+h1::before {
+  content: url(smile.png);
+  width:20px;
+  height:5px;
+}
+
+</style>
+</head>
+<body>
+    <!-- <img src="../sample/ferrari.jpg" alt="img not found" width="100%" height="500">
+    <h1>
+        IMAGE
+    </h1>
+    <p>
+        Paris is a wonderful place in the world.Since the 17th century, Paris has been one of the world's major centres of finance, diplomacy, commerce, culture, fashion, and gastronomy. For its leading role in the arts and sciences, <br>
+        as well as its early and extensive system of street lighting, in the 19th century, it became known as the City of Light.Since the 17th century, Paris has been one of the world's major centres of finance, diplomacy, commerce,<br>
+         culture, fashion, and gastronomy.
+    </p>  -->
+
+<h1>Overlapping elements</h1>
+
+<div class="container">
+  <div class="black-box">Black box
+  </div>
+  <div class="gray-box">Gray box</div>
+  <div class="green-box">Green box
+    <p>If two positioned elements overlap each other without a z-index specified,
+        the element defined last in the HTML code will be shown on top</p>
+  </div>
+  <img src="../sample/ferrari.jpg" alt="img not found" width="25%" height="500">
+  <p>If two positioned elements overlap each other without a z-index specified,
+    the element defined last in the HTML code will be shown on top</p>
+</div>
+</body>
+</html>
