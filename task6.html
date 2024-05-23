@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   * {
+        box-sizing: border-box;
+      }
+      
+      .box {
+        float: left;
+        width: 33.33%;
+        padding: 50px;
+      }
+      
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      </style>
+</head>
+<body>
+    <div class="clearfix">
+        <div class="box" style="background-color:hsl(263, 86%, 26%)">
+        </div>
+        <div class="box" style="background-color:hsl(0, 89%, 27%)">
+        </div>
+        <div class="box" style="background-color:hsl(138, 73%, 46%)">
+        </div>
+      </div>
+</body>
+</html>
