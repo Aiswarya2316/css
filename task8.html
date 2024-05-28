@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item1 { grid-area: WebDairy; }
+        .item2 { grid-area: Home; }
+        .item3 { grid-area: About; }
+        .item4 { grid-area: Contact; }
+        .item5 { grid-area: cssgridexample; }
+        .item6 { grid-area: img; }
+        .item7 { grid-area: Lorem ; }
+        .item8 { grid-area: Readmore; }
+        .item9 { grid-area:View ; }
+        
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            'WebDairy WebDairy WebDairy WebDairy Home About Contact'
+            'cssgridexample cssgridexample cssgridexample cssgridexample img img img'
+            'cssgridexample cssgridexample cssgridexample cssgridexample img img img'
+            'cssgridexample cssgridexample cssgridexample cssgridexample img img img'
+            'Lorem Lorem Lorem Lorem img img img'
+            'Readmore Readmore View View img img img';
+          /* gap: 10px; */
+          
+          /* padding: 10px; */
+          grid-template-rows: 80px 500px 80px 80px;
+        }
+        
+        .grid-container > div {
+         
+          text-align: center;
+          /* padding: 20px 0; */
+          font-size: 30px;
+        }
+        .item1{
+            background-color: cadetblue;
+        }
+        .item2 , .item3 ,.item4{
+            background-color: antiquewhite;
+        }
+        .item7{
+            background-color: aqua;
+        }
+        .item8{
+            background-color: darkgreen;
+        }
+        .item9{
+            background-color: chartreuse;
+        }
+        .item6{
+            height:100%
+        }
+        </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">WebDairy</div>
+        <div class="item2">Home</div>
+        <div class="item3">About</div>
+        <div class="item4">Contact</div>  
+        <div class="item5">cssgridexample
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dignissimos rem dolore impedit<br>
+                 hic soluta nam doloremque repellat? Nostrum optio officia dignissimos quasi, necessitatibus<br>
+                  assumenda ducimus maiores deserunt excepturi tenetur?</p>
+        </div>
+        <div class="item6">
+            <img src="paris.jpg" height="100%" width="100%">
+        </div>
+        <div class="item7">Lorem</div>
+        <div class="item8">Readmore</div>
+        <div class="item9">View</div>
+      </div>  
+</body>
+</html>

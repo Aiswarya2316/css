@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: auto auto auto auto auto auto;
+          gap: 10px;
+          background-color: #8e09cc;
+          padding: 10px;
+        }
+        
+        .grid-container > div {
+          background-color: rgba(255, 255, 255, 0.8);
+          text-align: center;
+          padding: 20px 0;
+          font-size: 30px;
+        }
+        
+        .item8 {
+          grid-area: 1 / 2 / 5 / 6;
+        }
+        
+/* .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-row: 1 / 4;
+} */
+/* .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+} */
+
+ /* .grid-container {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 50px 50px 50px; Make the grid smaller than the container
+  gap: 10px;
+  background-color: hwb(100 10% 89%);
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(228, 13, 13, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}  */
+
+/* .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color: hsl(36, 90%, 54%);
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(24, 215, 221, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+  .item1 { grid-area: 1 / span 3 / 2 / 4; }
+  .item2 { grid-area: 3 / 3 / 4 / 4; }
+  .item3 { grid-area: 2 / 1 / 3 / 2; }
+  .item4 { grid-area: 2 / 2 / span 2 / 3; }
+  .item5 { grid-area: 3 / 1 / 4 / 2; }
+  .item6 { grid-area: 2 / 3 / 3 / 4; }
+} */
+        </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>  
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>  
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+        <div class="item13">13</div>
+        <div class="item14">14</div>
+        <div class="item15">15</div>
+        <div class="item15">16</div>
+      </div>
+      <!-- <div class="grid-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+      </div> -->
+</body>
+</html>
