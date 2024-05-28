@@ -36,20 +36,20 @@ a{
   text-decoration: none;
 }
 
-div.gallery {
+/* div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float:left;
   width: 200px;
   
 
-}
+} */
 
 div.gallery:hover {
   border: 1px solid #777;
 }
 
-div.gallery img {
+/* div.gallery img {
   width: 100%;
   height: auto;
 }
@@ -57,6 +57,29 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+} */
+h1{
+  position: relative;
+  margin-top: -500px;
+}
+
+.main_gallery{
+  display: flex;
+  flex-direction: row;
+  /* overflow-x: scroll;
+  overflow-y: hidden; */
+}
+.gallery{
+  /* float: left; */
+  text-align: center;
+  /* flex:25%; */
+  width: 400px;
+  height: 300px;
+}
+.gallery img{
+  width: 100%;
+  height: 200px;
+  object-fit: contain ;
 }
     </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -76,37 +99,40 @@ div.desc {
                
           </ul>       
     </nav>
+    <div>
     <img src="grm.jpg" width="100%" height="25%">
     <div class="elementor-element elementor-element-771978f7 elementor-widget elementor-widget-image" data-id="771978f7" data-element_type="widget" data-widget_type="image.default">
       <div class="elementor-widget-container">
       <style>/*! elementor - v3.21.0 - 26-05-2024 */
       .elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style> <img decoding="async" width="400" height="120" src="https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657.png" data-src="https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657.png" class="attachment-full size-full wp-image-12190 lazy loaded" alt="" data-srcset="https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657.png 400w, https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657-300x90.png 300w" data-sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:30%;max-width:400px" sizes="(max-width: 400px) 100vw, 400px" srcset="https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657.png 400w, https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657-300x90.png 300w" data-was-processed="true"> </div>
-      </div>
+       <h1>WELCOME</h1>
+       </div>
+<div class="main_gallery">
 
         <div class="gallery">
       <a target="_blank" href="frok.jpg">
-        <img src="frok.jpg" alt="Cinque Terre" width="600" height="400">
+        <img src="frok.jpg" alt="Cinque Terre">
       </a>
       <div class="desc">$456.780</div>
         </div>
     
     <div class="gallery">
       <a target="_blank" href="gown.jpg.crdownload">
-        <img src="gown.jpg.crdownload" alt="Forest" width="600" height="400">
+        <img src="gown.jpg.crdownload" alt="Forest" >
       </a>
       <div class="desc">$125.34</div>
     </div>
     
     <div class="gallery">
       <a target="_blank" href="black.jpg">
-        <img src="black.jpg" alt="Northern Lights" width="600" height="400">
+        <img src="black.jpg" alt="Northern Lights" >
       </a>
       <div class="desc">$124.35</div>
     </div>
     
     <div class="gallery">
       <a target="_blank" href="img.jpg">
-        <img src="img.jpg" alt="Mountains" width="600" height="400">
+        <img src="img.jpg" alt="Mountains" >
       </a>
       <div class="desc">$12.34</div>
     </div>
@@ -114,11 +140,46 @@ div.desc {
     
     <div class="gallery">
       <a target="_blank" href="home.avif">
-        <img src="home.avif" alt="Northern Lights" width="600" height="400">
+        <img src="home.avif" alt="Northern Lights" >
+      </a>
+      <div class="desc">$124.35</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="black.jpg">
+        <img src="black.jpg" alt="Northern Lights" >
       </a>
       <div class="desc">$124.35</div>
     </div>
     
+    <div class="gallery">
+      <a target="_blank" href="img.jpg">
+        <img src="img.jpg" alt="Mountains" >
+      </a>
+      <div class="desc">$12.34</div>
+    </div>
     
+    
+    <div class="gallery">
+      <a target="_blank" href="home.avif">
+        <img src="home.avif" alt="Northern Lights" >
+      </a>
+      <div class="desc">$124.35</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="img.jpg">
+        <img src="img.jpg" alt="Mountains" >
+      </a>
+      <div class="desc">$12.34</div>
+    </div>
+    
+    
+    <div class="gallery">
+      <a target="_blank" href="home.avif">
+        <img src="home.avif" alt="Northern Lights" >
+      </a>
+      <div class="desc">$124.35</div>
+    </div>
+      
+</div>
 </body>
 </html>
