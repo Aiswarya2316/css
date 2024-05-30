@@ -70,22 +70,31 @@ h1{
 
 .main_gallery{
   display: flex;
-  flex-direction: row;
-  /* overflow-x: scroll;
-  overflow-y: hidden; */
+  overflow-x: scroll;
+
 }
 .gallery{
+
   /* float: left; */
   text-align: center;
-  /* flex:25%; */
-  width: 400px;
+  width: 300px;
   height: 300px;
+  margin: 10px;
 }
-.gallery img{
+.sub img{
   width: 100%;
-  height: 200px;
-  object-fit: contain ;
+  height: 150px;
 }
+
+.sub{
+
+/* float: left; */
+text-align: center;
+width: 300px;
+height: 300px;
+margin: 10px;
+}
+
 li input[type=text] {
   width: 50%;
   box-sizing: border-box;
@@ -114,7 +123,7 @@ input[type=text] {
 h2{
   text-align: center;
 }
-.sub_gallery{
+.sub_gallery{ 
   display: flex;
   flex-direction: row;
 }
@@ -144,7 +153,7 @@ h2{
     <div class="elementor-element elementor-element-771978f7 elementor-widget elementor-widget-image" data-id="771978f7" data-element_type="widget" data-widget_type="image.default">
       <div class="elementor-widget-container">
       <style>/*! elementor - v3.21.0 - 26-05-2024 */
-      .elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style> <img decoding="async" width="400" height="120" src="https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657.png" data-src="https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657.png" class="attachment-full size-full wp-image-12190 lazy loaded" alt="" data-srcset="https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657.png 400w, https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657-300x90.png 300w" data-sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:30%;max-width:400px" sizes="(max-width: 400px) 100vw, 400px" srcset="https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657.png 400w, https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657-300x90.png 300w" data-was-processed="true"> </div>
+      .elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style> <img decoding="async" width="400" height="120"  data-src="https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657.png" class="attachment-full size-full wp-image-12190 lazy loaded" alt="" data-srcset="https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657.png 400w, https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657-300x90.png 300w" data-sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:30%;max-width:400px" sizes="(max-width: 400px) 100vw, 400px" srcset="https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657.png 400w, https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657-300x90.png 300w" data-was-processed="true"> </div>
        <h1>WELCOME TO<br><br><br>
         <img class="img-fluid logo-spec no-lazy" src="inimg.jpeg" alt=""><br><br>
       ONLINE SHOP</h1>
@@ -154,14 +163,24 @@ h2{
        </form>
        </div>
 
-<div class="main_gallery">
+<div class="main_gallery m-5">
         <div class="gallery">
       <a target="_blank" href="frok.jpg">
         <img src="frok.jpg" class="rounded-circle" alt="Cinque Terre" width="236" height="236">
       </a>
       <div class="desc">$456.780</div>
         </div>
-    
+        <div class="gallery">
+          <a target="_blank" href="frok.jpg">
+            <img src="frok.jpg" class="rounded-circle" alt="Cinque Terre" width="236" height="236">
+          </a>
+          <div class="desc">$456.780</div>
+            </div>  <div class="gallery">
+              <a target="_blank" href="frok.jpg">
+                <img src="frok.jpg" class="rounded-circle" alt="Cinque Terre" width="236" height="236">
+              </a>
+              <div class="desc">$456.780</div>
+                </div>
     <div class="gallery">
       <a target="_blank" href="gown.jpg.crdownload">
         <img src="gown.jpg.crdownload" class="rounded-circle" alt="Cinque Terre" width="236" height="236">
@@ -186,7 +205,7 @@ h2{
     
     <div class="gallery">
       <a target="_blank" href="home.avif">
-        <img src="home.avif" class="rounded-circle" alt="Cinque Terre" width="236" height="236">
+        <img src="home.avif" class="rounded-circle" alt="Cinque Terre" width="150" height="150">
       </a>
       <div class="desc">$124.35</div>
     </div>
@@ -229,10 +248,12 @@ h2{
     </div>
       
 </div>
-<h2>Best Selling Products</h2>
-<div class="sub_gallery">
 
-  <div class="gallery">
+
+<h2>Best Selling Products</h2>
+<!-- <div class="sub_gallery"> -->
+
+  <!-- <div class="sub">
 <a target="_blank" href="frok.jpg">
   <img src="frok.jpg" alt="Cinque Terre">
 </a>
@@ -240,7 +261,7 @@ h2{
   $456.780</div>
   </div>
 
-<div class="gallery">
+<div class="sub">
 <a target="_blank" href="gown.jpg.crdownload">
   <img src="gown.jpg.crdownload" alt="Forest" >
 </a>
@@ -248,7 +269,7 @@ h2{
   $125.34</div><br><br>
 </div>
 <br><br>
-<div class="gallery">
+<div class="sub">
 <a target="_blank" href="black.jpg">
   <img src="black.jpg" alt="Northern Lights" >
 </a>
@@ -256,15 +277,65 @@ h2{
   $124.35</div>
 </div>
 
-<div class="gallery">
+<div class="sub">
 <a target="_blank" href="home.avif">
   <img src="home.avif" alt="Northern Lights" >
 </a>
 <div class="desc">child wears<br><br>
   $124.35</div>
-</div>
-</div>
+</div> -->
 
+<div class="container mt-3">
+  <!-- <h2>Card Image</h2>
+  <p>Image at the top (card-img-top):</p> -->
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="img.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <!-- <h4 class="card-title">Paris</h4> -->
+      <p class="card-text">Fancy Gown For Women</p>
+      <a href="#" class="btn btn-primary">Buy Now</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="container mt-3">
+    <!-- <h2>Card Image</h2>
+    <p>Image at the top (card-img-top):</p> -->
+    <div class="card" style="width:400px">
+      <img class="card-img-top" src="frok.jpg" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <!-- <h4 class="card-title">Paris</h4> -->
+        <p class="card-text">Fancy Gown For Women</p>
+        <a href="#" class="btn btn-primary">Buy Now</a>
+      </div>
+    </div>
+    </div>
+
+    <div class="container mt-3">
+      <!-- <h2>Card Image</h2>
+      <p>Image at the top (card-img-top):</p> -->
+      <div class="card" style="width:400px">
+        <img class="card-img-top" src="redfrk.jpg" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <!-- <h4 class="card-title">Paris</h4> -->
+          <p class="card-text">Fancy Gown For Women</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+      </div>
+
+      <div class="container mt-3">
+        <!-- <h2>Card Image</h2>
+        <p>Image at the top (card-img-top):</p> -->
+        <div class="card" style="width:400px">
+          <img class="card-img-top" src="black.jpg" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <!-- <h4 class="card-title">Paris</h4> -->
+            <p class="card-text">Fancy Gown For Women</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+        </div>
 
 </body>
 </html>
