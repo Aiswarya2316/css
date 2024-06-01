@@ -38,28 +38,13 @@ a{
   text-decoration: none;
 }
 
-/* div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float:left;
-  width: 200px;
-  
 
-} */
 
 div.gallery:hover {
   border: 1px solid #777;
 }
 
-/* div.gallery img {
-  width: 100%;
-  height: auto;
-}
 
-div.desc {
-  padding: 15px;
-  text-align: center;
-} */
 h1{
   position: relative;
   margin-top: -1400px;
@@ -71,29 +56,16 @@ h1{
 .main_gallery{
   display: flex;
   overflow-x: scroll;
-
 }
-.gallery{
 
-  /* float: left; */
+
+.gallery{
   text-align: center;
   width: 300px;
   height: 300px;
   margin: 10px;
 }
-/* .sub img{
-  width: 100%;
-  height: 150px;
-} */
 
-/* .sub{
-
-float: left;
-text-align: center;
-width: 300px;
-height: 300px;
-margin: 10px;
-} */
 
 li input[type=text] {
   width: 50%;
@@ -133,9 +105,12 @@ h4{
   display: flex;
   flex-direction: row;
 }
+#input_div{
+  margin-left: 40%;
 
-h3 input[type=text] {
-  width: 20%;
+}
+
+#input_div input[type=button] {
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
@@ -145,13 +120,31 @@ h3 input[type=text] {
   background-position: 10px 10px; 
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
-  margin-left: 800px;
   
 }
+
 th{
   margin-left: 200px;
 }
-    </style>
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  #input_div{
+ margin-left: 15%;
+  }
+}
+
+</style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
@@ -275,47 +268,13 @@ th{
 
 
 <h2>Best Selling Products</h2>
-<!-- <div class="sub_gallery"> -->
 
-  <!-- <div class="sub">
-<a target="_blank" href="frok.jpg">
-  <img src="frok.jpg" alt="Cinque Terre">
-</a>
-<div class="desc">Frocks for children<br><br>
-  $456.780</div>
-  </div>
-
-<div class="sub">
-<a target="_blank" href="gown.jpg.crdownload">
-  <img src="gown.jpg.crdownload" alt="Forest" >
-</a>
-<div class="desc">Gown for teanegers<br><br>
-  $125.34</div><br><br>
-</div>
-<br><br>
-<div class="sub">
-<a target="_blank" href="black.jpg">
-  <img src="black.jpg" alt="Northern Lights" >
-</a>
-<div class="desc">frock for womens<br><br>
-  $124.35</div>
-</div>
-
-<div class="sub">
-<a target="_blank" href="home.avif">
-  <img src="home.avif" alt="Northern Lights" >
-</a>
-<div class="desc">child wears<br><br>
-  $124.35</div>
-</div> -->
-
-<div class="container mt-3">
-  <!-- <h2>Card Image</h2>
-  <p>Image at the top (card-img-top):</p> -->
-  <div class="card" style="width:400px">
-    <img class="card-img-top" src="img.jpg" alt="Card image" style="width:100%">
+  <div class="row g-0">
+    <div class="col-lg-2 col-md-0"></div>
+    <div class="col-md-12 col-lg-4 product-column">
+  <div class="card" style="width:50%;height:50%">
+    <img class="card-img-top" src="img.jpg" alt="Card image" style="width:100%;height: 400px;" >
     <div class="card-body">
-      <!-- <h4 class="card-title">Paris</h4> -->
       <p class="card-text">Fancy Gown For Women
         <br><br>₹1200
       </p>
@@ -324,13 +283,11 @@ th{
   </div>
   </div>
 
-  <div class="container mt-3">
-    <!-- <h2>Card Image</h2>
-    <p>Image at the top (card-img-top):</p> -->
-    <div class="card" style="width:400px">
-      <img class="card-img-top" src="frok.jpg" alt="Card image" style="width:100%">
+  
+    <div class="col-md-12 col-lg-4 product-column">
+    <div class="card" style="width:50%;height:50%">
+      <img class="card-img-top" src="frok.jpg" alt="Card image" style="width:100%;height: 400px;">
       <div class="card-body">
-        <!-- <h4 class="card-title">Paris</h4> -->
         <p class="card-text">Frock  For Women
           <br><br>₹1500
         </p>
@@ -338,14 +295,17 @@ th{
       </div>
     </div>
     </div>
+    <div class="col-md-0 col-lg-2">   
+    </div>
+  </div>
+   
 
-    <div class="container mt-3">
-      <!-- <h2>Card Image</h2>
-      <p>Image at the top (card-img-top):</p> -->
-      <div class="card" style="width:400px">
-        <img class="card-img-top" src="redfrk.jpg" alt="Card image" style="width:100%">
+<div class="row g-0 ">
+  <div class="col-md-0 col-lg-2"></div>
+      <div class="col-md-12  col-lg-4 product-column">
+      <div class="card" style="width:50%;height:50%">
+        <img class="card-img-top" src="redfrk.jpg" alt="Card image" style="width:100%;height: 400px;">
         <div class="card-body">
-          <!-- <h4 class="card-title">Paris</h4> -->
           <p class="card-text">Red  Gown For Women
             <br><br>₹1800
           </p>
@@ -354,13 +314,11 @@ th{
       </div>
       </div>
 
-      <div class="container mt-3">
-        <!-- <h2>Card Image</h2>
-        <p>Image at the top (card-img-top):</p> -->
-        <div class="card" style="width:400px">
-          <img class="card-img-top" src="black.jpg" alt="Card image" style="width:100%">
+     
+        <div class="col-md-12 col-lg-4 product-column">
+        <div class="card" style="width:50%;height:50%">
+          <img class="card-img-top" src="black.jpg" alt="Card image" style="width:100%;height: 400px;">
           <div class="card-body">
-            <!-- <h4 class="card-title">Paris</h4> -->
             <p class="card-text"> Black Frock For Women
               <br><br>₹11000
             </p>
@@ -368,20 +326,21 @@ th{
           </div>
         </div>
         </div>
-<h3>
-        <form>
-          <input type="text" name="Browse More Products" placeholder="Browse More Products.."> <br><br>
-          </form>
-          </h3>
-          <h4>New Arrivals</h4>
+        <div class="col-md-0 col-lg-2"></div>
+        </div>
 
-          <div class="container mt-3">
-            <!-- <h2>Card Image</h2>
-            <p>Image at the top (card-img-top):</p> -->
-            <div class="card" style="width:400px">
-              <img class="card-img-top" src="new.webp" alt="Card image" style="width:100%">
+   <div id="input_div">
+          <input type="button" name="Browse More Products" value="Browse More Products..">
+    </div>
+
+                <h4>New Arrivals</h4>
+
+       <div class="row g-0">
+        <div class="col-md-0 col-lg-2"></div>
+        <div class="col-md-12 col-lg-4 product-column">
+            <div class="card" style="width:50%;height:50%">
+              <img class="card-img-top" src="new.webp" alt="Card image" style="width:100%" height="330px">
               <div class="card-body">
-                <!-- <h4 class="card-title">Paris</h4> -->
                 <p class="card-text">Frock For Children
                   <br><br>₹1500
                 </p>
@@ -390,13 +349,10 @@ th{
             </div>
             </div>
           
-            <div class="container mt-3">
-              <!-- <h2>Card Image</h2>
-              <p>Image at the top (card-img-top):</p> -->
-              <div class="card" style="width:400px">
-                <img class="card-img-top" src="tradition.jpg" alt="Card image" style="width:100%">
+            <div class="col-md-12 col-lg-4 product-column">
+              <div class="card" style="width:50%;height:50%">
+                <img class="card-img-top" src="tradition.jpg" alt="Card image" style="width:100%" height="330px">
                 <div class="card-body">
-                  <!-- <h4 class="card-title">Paris</h4> -->
                   <p class="card-text">Traditional Dress
                     <br><br>₹1589
                   </p>
@@ -404,11 +360,41 @@ th{
                 </div>
               </div>
               </div>
-              <h3>
-                <form>
-                  <input type="text" name="Browse More Products" placeholder="Browse More Products.."> <br><br>
-                  </form>
-                  </h3>
+              <div class="col-md-0 col-lg-2"></div>
+              </div>
+
+              <div class="row g-0">
+              <div class="col-md-0 col-lg-2"></div>
+              <div class="col-md-12 col-lg-4 product-column">
+                <div class="card" style="width:50%;height:50%">
+                  <img class="card-img-top" src="new.webp" alt="Card image" style="width:100%" height="380px">
+                  <div class="card-body">
+                    <p class="card-text">Frock For Children1
+                      <br><br>₹1500
+                    </p>
+                    <a href="#" class="btn btn-success">Buy Now</a>
+                  </div>
+                </div>
+                </div>
+              
+                <div class="col-md-12 col-lg-4 product-column">
+                  <div class="card" style="width:50%;height:50%">
+                    <img class="card-img-top" src="tradition.jpg" alt="Card image" style="width:100%" height="330px">
+                    <div class="card-body">
+                      <p class="card-text">Traditional Dress
+                        <br><br>₹1589
+                      </p>
+                      <a href="#" class="btn btn-success">Buy Now</a>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-md-0 col-lg-2"></div>
+                  </div>
+
+
+              <div id="input_div">
+                  <input type="button" name="Browse More Products" value="Browse More Products..">
+              </div>
 
                   <div class="container p-5 my-5 bg-dark text-white">
                     <table >
